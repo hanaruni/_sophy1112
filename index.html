@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
+      <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
      <!--jQuery 語法-->
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -16,6 +17,33 @@
     <title>Superpowers lyrics</title>
     <meta name="description"content="Superpowers lyrics">
     <link rel="stylesheet"href="style.css">
+     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script> 
+        <!-- 連結到fontawesome圖示資料庫-->
+
+        <!--jQuery 語法-->
+    
+        <!-- <title>jQuery UI Tabs - Default functionality</title> -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <!-- 連結到jQuary資料庫-->
+        <!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script> --> 
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <!-- 連結到jQuary資料庫-->
+
+        <!-- <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <!-- 連結到jQuary資料庫-->
+           <script>  //<!--加入 jQuary tabs語法-->
+                $(function () {
+                    $("#tabs").tabs();
+                });
+        </script>
+
+        <script>  //<!--加入 jQuary淡入語法-->
+                $(function () {
+                    $("main").hide();
+                    $("main").fadeIn(2000);
+                });
+        </script>
     <style>
 body {
         height: 100vh;
@@ -44,6 +72,7 @@ body {
     }
 
     h1 {
+
         font-size: 36px;
         text-transform: uppercase;
         background: linear-gradient(90deg, #ffffff, #cccccc, #666666, #cccccc, #ffffff);
@@ -52,6 +81,55 @@ body {
         background-size: 200% auto;
         animation: shineText 4s linear infinite;
     }
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+    animation-iteration-count:unset;
+  animation-direction: alternate;
+
+}
+
+@keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+h1 {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-name: slidein;
+  -moz-animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
 
     p {
         font-size: 20px;
@@ -133,7 +211,35 @@ You're the main character now<br>
         <p></p>
 	Lift your head to the sky (to the sky, oh, sky, sky)<br>
 Oh, yeah<br>
-<p></p>
+<!-- tabs設定開始--> 	
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1"><i class="fas fa-regular fa-user"></i> 愛是人類最真實的「超能力」</a></li>      <!-- tabs標題1，加入Font Awesome--> 
+    <li><a href="#tabs-2"><i class="fas fa-solid fa-cloud"></i> 接納自己的脆弱，也是一種力量</a></li>            <!-- tabs標題2，加入Font Awesome--> 
+    <li><a href="#tabs-3"><i class="fas fa-eye-dropper"></i> 超越個體的連結：愛讓我們彼此相通</a></li> <!-- tabs標題3，加入Font Awesome--> 
+  </ul>
+  <div id="tabs-1">
+    <p>即使現實讓人受傷、脆弱，愛依然能讓我們重新相信世界、相信自己。
+他用「Superpowers」比喻愛的能量，讓人有勇氣面對情緒、矛盾與不完美。</p>
+  </div>
+  <div id="tabs-2">
+    <p>歌曲裡有種近乎「懺悔」與「赤裸」的情緒。
+Caesar 讓聽者感受到：真正的超能力不是完美，而是敢面對不完美。
+他在歌中承認自己的矛盾與錯誤，卻依然願意伸出手、去愛。
+這份坦誠讓我們學會，脆弱並不等於軟弱——那是一種人性之光。</p>
+  </div>
+  <div id="tabs-3">
+    <p>在〈Superpowers〉中，他唱出「我們都有愛的能力」，暗示人與人之間存在一種共同的能量。
+那是一種跨越語言、膚色、距離的理解——
+
+當我們用心去感受、去共鳴，就能進入彼此的宇宙。</p>
+  </div>
+</div>
+<!-- tabs設定結束--> 
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rScwLoES2bM?si=Lae3sra-w2OL2RM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
 <!-- a 超連結設定，需搭配href，target="_blank開啟新視窗--> 
 	<a href="https://www.youtube.com/watch?v=rScwLoES2bM&list=RDrScwLoES2bM&start_radio=1" target="_blank">聽歌去</a>  
         </div>

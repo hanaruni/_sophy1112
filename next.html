@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
+     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
      <!--jQuery 語法-->
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -16,6 +17,33 @@
     <title>Always lyrics</title>
     <meta name="description"content="Always lyrics">
     <link rel="stylesheet"href="style.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script> 
+        <!-- 連結到fontawesome圖示資料庫-->
+
+        <!--jQuery 語法-->
+    
+        <!-- <title>jQuery UI Tabs - Default functionality</title> -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <!-- 連結到jQuary資料庫-->
+        <!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script> --> 
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <!-- 連結到jQuary資料庫-->
+
+        <!-- <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <!-- 連結到jQuary資料庫-->
+           <script>  //<!--加入 jQuary tabs語法-->
+                $(function () {
+                    $("#tabs").tabs();
+                });
+        </script>
+
+        <script>  //<!--加入 jQuary淡入語法-->
+                $(function () {
+                    $("main").hide();
+                    $("main").fadeIn(2000);
+                });
+        </script>
      <style>
 body {
         height: 100vh;
@@ -52,7 +80,55 @@ body {
         background-size: 200% auto;
         animation: shineText 4s linear infinite;
     }
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+    animation-iteration-count:unset;
+  animation-direction: alternate;
 
+}
+
+@keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+h1 {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-name: slidein;
+  -moz-animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
     p {
         font-size: 20px;
         line-height: 1.8;
@@ -143,7 +219,36 @@ I'm always, ways, ways<br>
 Always, you can count on it, sure as the sun will rise<br>
 Always, my love for you ain't goin' nowhere<br>
 Always, I will be here<br>
-<p></p>
+<!-- tabs設定開始--> 	
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1"><i class="fas fa-regular fa-user"></i> 愛不是永遠擁有，而是永遠感受</a></li>      <!-- tabs標題1，加入Font Awesome--> 
+    <li><a href="#tabs-2"><i class="fas fa-solid fa-cloud"></i> 面對失去，也是一種成長</a></li>            <!-- tabs標題2，加入Font Awesome--> 
+    <li><a href="#tabs-3"><i class="fas fa-eye-dropper"></i> 愛會留下痕跡，成為我們的一部分</a></li> <!-- tabs標題3，加入Font Awesome--> 
+  </ul>
+  <div id="tabs-1">
+    <p>歌名「Always」看似永恆，但在歌裡，「永遠」其實是一種記憶與情感的延續。
+Caesar 唱著：「You’re always in my mind, always in my time」——
+代表那個人雖然不在身邊，卻依然存在於生活的每個角落。
+這提醒我們：有時愛不在於佔有，而在於記得。</p>
+  </div>
+  <div id="tabs-2">
+    <p>〈Always〉裡的聲音很克制，不是歇斯底里的悲傷，而是一種溫柔的接受。
+他讓我們感受到，學會與失去共存，是愛的一部分。
+當他唱出「If I could do it again, I’d do it the same」時，那是一種帶著痛的成熟——
+後悔與珍惜並存，卻依然願意感謝那段愛。</p>
+  </div>
+  <div id="tabs-3">
+    <p>歌曲結尾的旋律反覆、逐漸淡出，就像愛慢慢被時間沖淡，卻從未真正消失。
+Caesar 用這首歌告訴我們：
+
+愛不一定能被延續，但它會在心裡變成一種力量，讓我們更懂得去愛、去理解。</p>
+  </div>
+</div>
+<!-- tabs設定結束--> 
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lk3UlEyIW84?si=yohA9kTKPYd3ZXbR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
 <!-- a 超連結設定，需搭配href，target="_blank開啟新視窗--> 
 	<a href="https://www.youtube.com/watch?v=Lk3UlEyIW84" target="_blank">聽歌去</a>  
         </div>
